@@ -32,8 +32,8 @@ client.on("message", async message => {
         });
     }
 
-    if(command === "create1"){
-        if (message.author.id != 816470172097183785) {
+    if(command === "create1"){ //Allows the user ID mentioned below to create a server backup.
+        if (message.author.id != 816470172097183785) { //Edit a customer user ID here
             return message.channel.send(":x: | You must be the owner of this bot to use this command!")
         }
         message.channel.send('Creating the backup, please wait...')
